@@ -31,10 +31,10 @@ A beautiful real-time chat application built with Spring Boot and WebSockets.
 
 2. Run the container:
    ```
-   docker run -p 9999:9999 chat-app
+   docker run -d -p 9999:9999 --name chatapp-container chat-app
    ```
 
-3. Access the application at http://localhost:9999
+3. Access the application at http://<VM-PublicIP>:9999
 
 ### Without Docker
 
