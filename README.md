@@ -36,20 +36,18 @@ A beautiful real-time chat application built with Spring Boot and WebSockets.
 
 3. Access the application at http://<VM-PublicIP>:9999
 
-### Without Docker
+### Pushing Image to DockerHub
+Login to DockerHub using "docker login" command
 
-1. Make sure you have Java 17 and Maven installed
-2. Build the application:
+4. Tagging the Image:
    ```
-   mvn clean package
-   ```
-
-3. Run the application:
-   ```
-   java -jar target/chat-app-0.0.1-SNAPSHOT.jar
+   docker tag chat-app kastrov/chat-app:latest
    ```
 
-4. Access the application at http://localhost:9999
+5. Pushing the Image to DockerHub:
+   ```
+   docker push kastrov/chat-app:latest
+   ```
 
 ## Project Structure
 
